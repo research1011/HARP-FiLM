@@ -12,7 +12,7 @@ authors:
 version: 1.0.0
 date-released: 2026-05-27
 repository-code: "https://github.com/research1011/HARP-FiLM"
-doi: "TO_BE_ASSIGNED_BY_ZENODO"
+doi: "10.5281/zenodo.20406322"
 abstract: "PyTorch implementation of HARP-FiLM for 24 h global ionospheric VTEC forecasting with Physics-FiLM modulation and adaptive dual-baseline residual prediction."
 keywords:
   - ionosphere
