@@ -37,7 +37,6 @@ HARP-FiLM/
 │   ├── preprocessing.md
 │   ├── reproducibility.md
 │   ├── open_research_and_references.md
-│   └── zenodo_release_checklist.md
 ├── src/
 │   └── harp_film/
 │       ├── __init__.py
@@ -145,7 +144,6 @@ If you use this software, please cite the manuscript and the archived software r
   version = {1.0.0},
   year = {2026},
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.20406322},
   url = {https://github.com/research1011/HARP-FiLM}
 }
 ```
