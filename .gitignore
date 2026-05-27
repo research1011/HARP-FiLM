@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+conda-env/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large model/checkpoint files
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# Results / temporary outputs
+runs/
+checkpoints/
+outputs/
+results/
+logs/
+figures_tmp/

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the manuscript and this archived software release."
+title: "HARP-FiLM: Global Ionospheric VTEC Forecasting with Physics-Guided Feature Modulation and Dual-Baseline Residuals"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Jiawen
+  - family-names: Yang
+    given-names: C.
+  - family-names: Han
+    given-names: L.
+version: 1.0.0
+date-released: 2026-05-27
+repository-code: "https://github.com/research1011/HARP-FiLM"
+doi: "TO_BE_ASSIGNED_BY_ZENODO"
+abstract: "PyTorch implementation of HARP-FiLM for 24 h global ionospheric VTEC forecasting with Physics-FiLM modulation and adaptive dual-baseline residual prediction."
+keywords:
+  - ionosphere
+  - VTEC
+  - space weather
+  - deep learning
+  - Physics-FiLM
+license: MIT

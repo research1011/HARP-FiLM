@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harp-film"
+version = "1.0.0"
+description = "HARP-FiLM for 24 h global ionospheric VTEC forecasting"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+  {name = "Jiawen Chen"}
+]
+keywords = ["ionosphere", "VTEC", "space weather", "deep learning", "PyTorch"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,54 @@
+# HARP-FiLM configuration template.
+# Update paths before running scripts/train.py.
+
+seed: 42
+
+data:
+  train_hdf5_path: "data/train_aux_0817_single.h5"
+  val_hdf5_path: "data/val_aux_1819_single.h5"
+  test_hdf5_path: "data/test_aux_2023_single.h5"
+  num_latitudes: 71
+  num_longitudes: 73
+  selected_aux_keys:
+    - "f10.7_index"
+    - "AU-index"
+    - "DST Index"
+    - "Plasma (Flow) speed"
+    - "Na/Np"
+
+window:
+  input_timestamps: 24
+  output_timestamps: 24
+  stride_train: 6
+  stride_val: 24
+  stride_test: 24
+
+loader:
+  batch_size: 128
+  num_workers: 12
+  pin_memory: true
+
+model:
+  d_model: 256
+  d_ff: 256
+  n_heads: 8
+  e_layers: 4
+  dropout: 0.15
+  activation: "relu"
+  cnn_channels: 12
+  use_learnable_temporal: true
+  k_recent: 8
+  gain_limit: 0.8
+
+train:
+  epochs: 150
+  learning_rate: 0.0002
+  weight_decay: 0.00001
+  scheduler_factor: 0.3
+  scheduler_patience: 10
+  min_learning_rate: 0.000001
+  early_stopping_patience: 20
+  grad_clip_norm: 0.5
+  output_dir: "outputs"
+  checkpoint_name: "best_model.pth"
+  prediction_hdf5_name: "output.h5"
