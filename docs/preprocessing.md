@@ -1,7 +1,3 @@
-# Preprocessing notes
-
-This document summarizes the preprocessing assumed by the released HARP-FiLM code.
-
 ## 1. CODE GIM processing
 
 The target variable is the global ionospheric vertical total electron content (VTEC) from CODE Global Ionosphere Maps.
